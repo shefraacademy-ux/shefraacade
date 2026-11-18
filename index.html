@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>أكاديمية شفرة | ابنِ منتجك الرقمي واربح منه بصدق وواقعية</title>
+<meta name="description" content="أكاديمية شفرة تعلمك كيف تصنع، تبني، وتسوق منتجك الرقمي بالطريقة الصح، بدون وعود كاذبة وبدون أحلام وردية.">
+<meta name="theme-color" content="#F5F5F3">
+<meta name="color-scheme" content="light dark">
+<script>(function(){var t="light";try{t=localStorage.getItem("shifra-theme")||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")}catch(e){}document.documentElement.setAttribute("data-theme",t)})()</script>
+<meta property="og:type" content="website">
+<meta property="og:title" content="أكاديمية شفرة | ابنِ منتجك الرقمي واربح منه بصدق وواقعية">
+<meta property="og:description" content="نظام عملي يغطي رحلتك من قبل الفكرة حتى استقبال الأرباح. ابدأ بالدليل المجاني.">
+<style>
+@font-face{font-family:'Vesterbro';font-weight:400;font-style:normal;font-display:swap;src:url(assets/V-Regular.woff) format('woff')}
+@font-face{font-family:'Vesterbro';font-weight:700;font-style:normal;font-display:swap;src:url(assets/V-Bold.woff) format('woff')}
+@font-face{font-family:'Vesterbro';font-weight:900;font-style:normal;font-display:swap;src:url(assets/V-Black.woff) format('woff')}
+
+/* ═══════════════ شفرة — نظام التصميم: وحدات مدورة (أصفر / رمادي / أسود) ═══════════════ */
+:root{
+  color-scheme:light;
+  --yellow:#FCEF1F;--yhi:#FFF76A;
+  --font:'Vesterbro','Tahoma','Segoe UI',system-ui,sans-serif;
+
+  --fs-d1:clamp(28px,1.2vw + 23px,40px);      /* عنوان الهيرو */
+  --fs-d2:clamp(21px,.5vw + 18px,24px);         /* عناوين الأقسام */
+  --fs-h3:clamp(18px,.5vw + 16px,20px);
+  --fs-lead:15.5px;
+  --fs-body:15px;--fs-sm:13px;
+  --fs-num:clamp(44px,3.2vw + 28px,76px);      /* الأرقام الضخمة داخل الوحدات */
+  --r-lg:clamp(22px,2.4vw,36px);--r-md:clamp(16px,1.5vw,24px);
+  --gap:clamp(10px,1.4vw,18px);
+  --pad:clamp(22px,3.2vw,48px);
+  --sec:clamp(56px,8vw,112px);
+
+  --bg:#F5F5F3;--paper:#fff;--grey:#E8E8E5;--grey2:#DADAD6;
+  --black:#111;--ink:#111;--text:#2a2a2a;--muted:#6c6c68;
+  --line:rgba(17,17,17,.16);--edge:rgba(17,17,17,.08);
+  --btn:#111;--btn-ink:#FCEF1F;--btn-i:#FCEF1F;--btn-i-ink:#111;
+  --head-bg:rgba(245,245,243,.82);--toggle-bg:rgba(17,17,17,.07);
+  --road-edge:#111;--road-dash:rgba(17,17,17,.55);
+  --foot:#111;
+  --star:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2.8v18.4M4 7.4l16 9.2M4 16.6l16-9.2' fill='none' stroke='black' stroke-width='3.6' stroke-linecap='round'/%3E%3C/svg%3E");
+  --m-glyph:url(assets/glyph_mask.png);
+  --i-fwd:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M20 12H5M11 5l-7 7 7 7' fill='none' stroke='black' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  --i-down:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 4v15M5 12l7 7 7-7' fill='none' stroke='black' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  --i-check:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M4.5 12.5l5 5L19.5 7' fill='none' stroke='black' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  --i-plane:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M21.5 3.2L2.8 10.4c-.9.35-.85 1.6.07 1.9l4.7 1.5 1.8 5.6c.25.8 1.3 1 1.8.35l2.6-3.1 4.6 3.4c.7.5 1.7.1 1.9-.75l3-14.2c.2-.95-.75-1.8-1.7-1.45z' fill='black'/%3E%3C/svg%3E");
+  --i-plus:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 5v14M5 12h14' stroke='%23111' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E");
+  --x-mark:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M7 7l10 10M17 7L7 17' fill='none' stroke='%23FCEF1F' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E");
+}
+[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#0b0b0b;--paper:#161616;--grey:#1e1e1e;--grey2:#2a2a2a;
+  --black:#000;--ink:#fff;--text:#e6e6e6;--muted:#a0a0a0;
+  --line:rgba(255,255,255,.18);--edge:rgba(255,255,255,.1);
+  --btn:#FCEF1F;--btn-ink:#111;--btn-i:#111;--btn-i-ink:#FCEF1F;
+  --head-bg:rgba(11,11,11,.8);--toggle-bg:rgba(255,255,255,.1);
+  --road-edge:#000;--road-dash:rgba(17,17,17,.6);
+  --foot:#000;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;scroll-padding-top:84px}
+html.tx *,html.tx *::before,html.tx *::after{transition:background-color .35s ease,color .35s ease,border-color .35s ease!important}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);font-weight:400;font-size:15px;line-height:1.85;direction:rtl;text-align:right;overflow-x:clip;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+img{display:block;max-width:100%;height:auto}
+button,input{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+h1,h2,h3,p,ul,ol,li{margin:0;padding:0}
+ul,ol{list-style:none}
+h1,h2,h3{font-weight:700;color:inherit;text-wrap:balance}
+strong,b{font-weight:900}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.wrap{width:100%;max-width:1320px;margin-inline:auto;padding-inline:clamp(14px,2.4vw,32px)}
+.num{direction:ltr;unicode-bidi:isolate}
+section{position:relative}
+.band{padding-block:var(--sec)}
+.band--tight{padding-block:0 var(--sec)}
+
+/* رموز (أقنعة) */
+.ico,.logo,.glyph,.ast{display:inline-block;flex:none;background:currentColor;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-position:center;mask-position:center;-webkit-mask-size:contain;mask-size:contain}
+.ico{width:1.05em;height:1.05em}
+.ico--fwd{-webkit-mask-image:var(--i-fwd);mask-image:var(--i-fwd)}
+.ico--down{-webkit-mask-image:var(--i-down);mask-image:var(--i-down)}
+.ico--check{-webkit-mask-image:var(--i-check);mask-image:var(--i-check)}
+.ico--plane{-webkit-mask-image:var(--i-plane);mask-image:var(--i-plane)}
+.ast{width:1em;height:1em;-webkit-mask-image:var(--star);mask-image:var(--star)}
+.logo,.glyph{aspect-ratio:481/361;-webkit-mask-image:var(--m-glyph);mask-image:var(--m-glyph)}
+
+/* ═════ الوحدات المدورة ═════ */
+.m{position:relative;min-width:0;border-radius:var(--r-lg);padding:var(--pad)}
+.m-y{background:var(--yellow);color:#111}
+.m-g{background:var(--grey);color:var(--ink)}
+.m-w{background:var(--paper);color:var(--ink);box-shadow:inset 0 0 0 1.5px var(--edge)}
+.m-k{background:var(--black);color:#fff}
+[data-theme="dark"] .m-k{box-shadow:inset 0 0 0 1px rgba(255,255,255,.14)}
+.m-k .muted{color:rgba(255,255,255,.72)}
+.m p{color:inherit}
+.stars{position:absolute;display:grid;place-items:center;width:clamp(40px,4.2vw,58px);aspect-ratio:1;border-radius:clamp(12px,1.3vw,18px);background:var(--yellow);color:#111;font-size:clamp(20px,2.2vw,30px)}
+.stars--k{background:#111;color:var(--yellow)}
+
+/* ميتا صغير مثل رأس الشرائح */
+.meta{display:flex;justify-content:space-between;align-items:center;gap:16px;font-size:12.5px;font-weight:700;letter-spacing:.04em;color:var(--muted);line-height:1.4;padding-block:6px 14px}
+.meta>span:nth-child(2){text-align:center}
+.eyebrow{display:flex;align-items:center;gap:12px;font-size:13px;font-weight:700;letter-spacing:.12em;color:var(--muted);line-height:1}
+.eyebrow i{display:block;height:1.5px;width:56px;background:currentColor;opacity:.5}
+.m-k .eyebrow,.m-k .meta{color:rgba(255,255,255,.62)}
+.m-y .eyebrow{color:rgba(17,17,17,.62)}
+
+/* تظليل: مستطيل أصفر مدور */
+.hl{display:inline-block;background:var(--yellow);color:#111;padding:0 .2em .06em;margin-inline:.04em;border-radius:.2em;line-height:1.22;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.u{background:linear-gradient(var(--yellow),var(--yellow)) 0 92%/100% .16em no-repeat;-webkit-box-decoration-break:clone;box-decoration-break:clone;padding-bottom:.04em}
+.d1{font-size:var(--fs-d1);line-height:1.3;font-weight:700;color:var(--ink)}
+.d2{font-size:var(--fs-d2);line-height:1.4;font-weight:700;color:inherit}
+.lead{font-size:var(--fs-lead);line-height:1.95;max-width:38em}
+.sechead{display:grid;gap:clamp(14px,2vw,22px);margin-bottom:clamp(26px,4vw,52px)}
+.sechead .lead{color:var(--text)}
+
+/* أزرار */
+.pill{display:inline-flex;align-items:center;gap:8px;padding:3px 15px 4px;border:1.5px solid currentColor;border-radius:999px;font-size:13px;font-weight:700;line-height:1.7;white-space:nowrap}
+.pill--y{background:var(--yellow);border-color:var(--yellow);color:#111}
+.pill--k{background:#111;border-color:#111;color:var(--yellow)}
+.soon{display:inline-flex;align-items:center;padding:1px 16px 2px;border-radius:999px;font-weight:900;font-size:14px;line-height:1.9;background:#111;color:var(--yellow);white-space:nowrap;vertical-align:middle}
+.m-k .soon{background:var(--yellow);color:#111}
+.btn{position:relative;display:inline-flex;align-items:center;gap:14px;min-height:56px;padding:5px 26px 5px 5px;border:0;border-radius:999px;cursor:pointer;text-decoration:none;font-weight:900;font-size:15px;line-height:1.3;color:var(--btn-ink);background:var(--btn);transition:transform .18s ease}
+.btn:hover{transform:translateY(-3px)}
+.btn__i{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;background:var(--btn-i);color:var(--btn-i-ink);font-size:19px;transition:transform .18s ease}
+.btn:hover .btn__i{transform:translateX(-4px)}
+.btn--y{background:var(--yellow);color:#111}.btn--y .btn__i{background:#111;color:var(--yellow)}
+.btn--k{background:#111;color:var(--yellow)}.btn--k .btn__i{background:var(--yellow);color:#111}
+.btn--sm{min-height:46px;font-size:14px;padding:4px 20px 4px 4px;gap:10px}.btn--sm .btn__i{width:40px;height:40px;font-size:17px}
+.btn--ghost{background:transparent;color:inherit;box-shadow:inset 0 0 0 1.5px currentColor;padding-inline:24px}
+.btn--ghost:hover{background:rgba(255,255,255,.1)}
+
+/* ═════ الهيدر ═════ */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:40;height:0;display:flow-root;overflow:visible}
+.top__in{position:relative;width:calc(100% - 20px);max-width:1296px;margin:10px auto 0;display:flex;flex-direction:column;gap:2px;padding:8px 8px 7px;border-radius:22px;background:var(--head-bg);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);box-shadow:inset 0 0 0 1.5px var(--edge)}
+.top__logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font-weight:700;font-size:16px;line-height:1;white-space:nowrap;padding:2px 10px}
+.top__logo .logo{width:38px}
+.top__nav{display:flex;align-items:center;gap:2px;font-weight:700;font-size:14px;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch;-webkit-mask-image:linear-gradient(to right,transparent 0,#000 24px);mask-image:linear-gradient(to right,transparent 0,#000 24px)}
+.top__nav::-webkit-scrollbar{display:none}
+.top__nav a{flex:none;padding:7px 14px;border-radius:999px;text-decoration:none;color:var(--text);white-space:nowrap;transition:background .15s}
+.top__nav a:hover{background:var(--toggle-bg)}
+.top__nav a.is-on{background:var(--toggle-bg);color:var(--ink)}
+.top__nav a.is-cta{margin-inline:0 4px;color:#111;background:var(--yellow)}
+.top__nav a.is-cta:hover{background:var(--yhi)}
+.theme{position:absolute;top:8px;inset-inline-end:8px;z-index:2;width:38px;height:38px;border-radius:50%;border:0;padding:0;cursor:pointer;display:grid;place-items:center;background:var(--toggle-bg);color:var(--ink);transition:transform .25s ease,top .2s ease}
+.theme:hover{transform:rotate(20deg)}
+.theme svg{width:19px;height:19px;display:block}
+.theme .i-sun{display:none}
+[data-theme="dark"] .theme .i-sun{display:block}
+[data-theme="dark"] .theme .i-moon{display:none}
+.top--compact .theme{top:4px}
+@media (max-width:1119px){.top--compact .top__logo{display:none}.top--compact .top__nav{padding-inline-end:46px}}
+@media (min-width:1120px){.top__in{flex-direction:row;align-items:center;justify-content:space-between;gap:12px;min-height:58px;padding:6px 14px 6px 8px;border-radius:999px}.top__nav{overflow:visible;-webkit-mask-image:none;mask-image:none;font-size:14.5px}.top__logo{font-size:17px}.top__logo .logo{width:44px}.theme{position:static;flex:none;order:3}}
+
+/* ═════ الهيرو ═════ */
+.hero{padding-block:clamp(96px,11vw,132px) var(--sec)}
+.hero__head{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:clamp(20px,4vw,64px);align-items:end;margin-bottom:clamp(24px,3.4vw,44px)}
+.hero h1 .ln{display:block}
+.stats3{display:grid;gap:0;align-self:end;min-width:min(100%,250px)}
+.stats3 li{display:grid;grid-template-columns:auto 1fr;gap:6px 14px;align-items:baseline;padding:12px 0;border-top:1.5px solid var(--line)}
+.stats3 b{font-size:clamp(24px,1vw + 18px,32px);line-height:1;font-weight:700;color:var(--ink)}
+.stats3 span{font-size:13.5px;line-height:1.5;color:var(--muted);font-weight:700}
+.hero__stage{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:clamp(16px,3vw,48px);align-items:center;padding:clamp(26px,4vw,56px);min-height:clamp(240px,26vw,360px)}
+.hero__stage .stars{inset-inline-start:clamp(14px,2vw,28px);top:clamp(14px,2vw,28px)}
+.hero__txt{display:grid;gap:clamp(18px,2.4vw,30px);justify-items:start}
+.hero__lead{font-size:var(--fs-lead);line-height:1.95;color:rgba(255,255,255,.82);max-width:34em}
+.hero__act{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.hero__cover{position:relative;justify-self:center;width:min(100%,300px);margin-top:calc(clamp(60px,7vw,110px)*-1);transform:rotate(-5deg);filter:drop-shadow(0 30px 28px rgba(0,0,0,.45))}
+.hero__cover img{width:100%;border-radius:8px 3px 3px 8px}
+.hero__cover .pill{position:absolute;inset-inline-start:-14px;bottom:18px;transform:rotate(5deg)}
+
+/* ═════ الخريطة المرنة: تُرسم مباشرة على الصفحة بدون بطاقة ═════ */
+.jhead{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,.7fr);gap:clamp(18px,4vw,64px);align-items:end;margin-bottom:clamp(8px,2vw,24px)}
+.legend{display:flex;flex-wrap:wrap;gap:10px 22px;font-size:13.5px;font-weight:700;color:var(--text);align-self:end}
+.legend span{display:inline-flex;align-items:center;gap:10px}
+.legend i{width:20px;height:20px;border-radius:50%;background:#111;box-shadow:0 0 0 2px var(--bg),0 0 0 3.5px #111}
+[data-theme="dark"] .legend i{background:#fff;box-shadow:0 0 0 2px var(--bg),0 0 0 3.5px #fff}
+.legend i.w{background:var(--paper);box-shadow:inset 0 0 0 3px #111,0 0 0 2px var(--bg)}
+[data-theme="dark"] .legend i.w{background:var(--yellow);box-shadow:inset 0 0 0 3px #111,0 0 0 2px var(--bg)}
+.road{position:relative;--cols:6;padding-inline:clamp(10px,3vw,40px)}
+.road__svg{position:absolute;left:0;top:0;width:100%;height:100%;overflow:visible;pointer-events:none;z-index:0}
+.road__edge,.road__line,.road__dash{fill:none;stroke-linecap:round;stroke-linejoin:round}
+.road__edge{stroke:var(--road-edge);stroke-width:26}
+.road__line{stroke:var(--yellow);stroke-width:18}
+.road__dash{stroke:var(--road-dash);stroke-width:2.4;stroke-dasharray:2 12}
+.road__edge,.road__line{stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset 3.4s cubic-bezier(.5,0,.2,1)}
+.road.in .road__edge,.road.in .road__line{stroke-dashoffset:0}
+.road__dash{opacity:0;transition:opacity .8s ease 2.6s}
+.road.in .road__dash{opacity:1}
+html:not(.js) .road__edge,html:not(.js) .road__line{stroke-dashoffset:0}
+.road__list{position:relative;z-index:1;display:grid;grid-template-columns:repeat(var(--cols),minmax(0,1fr));column-gap:clamp(4px,1vw,14px);row-gap:clamp(70px,9vw,118px);padding-block:clamp(34px,5vw,60px) clamp(34px,4vw,50px)}
+.stn{position:relative;display:grid;justify-items:center;align-content:start;gap:12px;text-align:center}
+.stn:nth-child(odd){translate:0 -12px}.stn:nth-child(even){translate:0 14px}
+.stn__dot{display:grid;place-items:center;width:clamp(40px,4.2vw,54px);aspect-ratio:1;border-radius:50%;background:#111;color:#fff;font-weight:900;font-size:clamp(13px,1.2vw,16px);line-height:1;direction:ltr;box-shadow:0 0 0 4px var(--bg)}
+[data-theme="dark"] .stn__dot{background:#000;box-shadow:0 0 0 4px var(--bg),inset 0 0 0 1.5px rgba(255,255,255,.55)}
+.stn--b .stn__dot{background:var(--paper);color:#111;box-shadow:0 0 0 4px var(--bg),inset 0 0 0 3.5px #111}
+[data-theme="dark"] .stn--b .stn__dot{background:var(--yellow);box-shadow:0 0 0 4px var(--bg),inset 0 0 0 3.5px #111}
+.stn--end .stn__dot{background:var(--yellow);color:#111;box-shadow:0 0 0 4px var(--bg),inset 0 0 0 3.5px #111;font-size:clamp(18px,1.8vw,24px)}
+.stn__lab{text-shadow:0 0 2px var(--bg),0 0 2px var(--bg),1.5px 0 0 var(--bg),-1.5px 0 0 var(--bg),0 1.5px 0 var(--bg),0 -1.5px 0 var(--bg),2px 2px 0 var(--bg),-2px 2px 0 var(--bg),2px -2px 0 var(--bg),-2px -2px 0 var(--bg);font-weight:700;font-size:clamp(13.5px,.3vw + 12px,15.5px);line-height:1.45;color:var(--ink);max-width:9.5em;text-wrap:balance}
+.stn__lab small{display:block;font-size:.82em;font-weight:400;color:var(--muted)}
+.stn--end .stn__lab{text-shadow:none;background:var(--yellow);color:#111;padding:1px 12px 3px;border-radius:12px}
+.stn{opacity:0;transition:opacity .6s ease var(--d,0s)}
+.road.in .stn{opacity:1}
+html:not(.js) .stn{opacity:1}
+
+/* ═════ من هي شفرة؟ ═════ */
+.about{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:var(--gap);align-items:stretch}
+.about__t{display:flex;flex-direction:column;justify-content:space-between;gap:clamp(24px,5vw,80px);min-height:clamp(200px,20vw,270px);overflow:clip}
+.about__t .pills{display:flex;flex-wrap:wrap;gap:8px}
+.about__p{display:flex;flex-direction:column;justify-content:flex-end;gap:20px;overflow:clip}
+.about__p p{font-size:var(--fs-lead);line-height:2;color:rgba(255,255,255,.86)}
+.about__p .stars{inset-inline-start:var(--pad);top:var(--pad)}
+.about__p .glyph{position:absolute;inset-inline-start:-40px;bottom:-60px;width:min(60%,300px);opacity:.06;transform:rotate(-10deg);pointer-events:none}
+
+/* ═════ المسارات (وحدات 01 02 03) ═════ */
+.paths{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--gap)}
+.pm{display:flex;flex-direction:column;gap:14px;min-height:clamp(300px,27vw,390px);overflow:clip}
+.pm__top{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}
+.pm__top img{width:clamp(56px,5.4vw,76px);height:auto}
+.pm h3{font-size:var(--fs-h3);line-height:1.5;margin-top:8px}
+.pm p{font-size:15px;line-height:1.9;opacity:.92;max-width:28em}
+.pm__act{padding-top:6px}
+.pm__n{margin-top:auto;font-size:var(--fs-num);line-height:.78;font-weight:700;direction:ltr;text-align:start;letter-spacing:-.03em;padding-top:18px}
+.pm__n u{display:block;width:100%;height:0;border-top:3px solid currentColor;margin-top:14px;opacity:.9}
+
+/* ═════ من وراء شفرة؟ ═════ */
+.who{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:var(--gap);align-items:stretch}
+.who__card p{font-size:var(--fs-lead);line-height:2.05;color:rgba(255,255,255,.88)}
+.who__card strong{background:var(--yellow);color:#111;padding:0 .26em .04em;border-radius:.2em}
+.facts{display:grid;align-content:center;gap:0;padding-block:clamp(10px,1.6vw,20px)}
+.fact{display:flex;align-items:flex-start;gap:14px;padding:clamp(14px,1.6vw,20px) 0;font-size:var(--fs-body);font-weight:700;line-height:1.7}
+.fact+.fact{border-top:1.5px solid var(--line)}
+.fact i{width:30px;height:30px;margin-top:0;border-radius:10px;display:grid;place-items:center;flex:none;background:var(--yellow);color:#111;font-size:15px}
+
+/* ═════ الأسئلة الشائعة ═════ */
+.faq{display:grid;border-top:2px solid var(--ink);counter-reset:q}
+.qa{border-bottom:1.5px solid var(--line);counter-increment:q}
+.qa summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:auto minmax(0,1fr) 44px;gap:clamp(12px,2vw,28px);align-items:center;padding:clamp(18px,2.2vw,28px) 4px;font-weight:700;font-size:clamp(16px,.4vw + 14.5px,19px);line-height:1.6;color:var(--ink)}
+.qa summary::before{content:counter(q,decimal-leading-zero);direction:ltr;font-size:13px;font-weight:700;letter-spacing:.08em;color:var(--muted);min-width:2.2em}
+.qa summary::-webkit-details-marker{display:none}
+.qa summary::after{content:"";width:44px;height:44px;border-radius:50%;background:var(--yellow) var(--i-plus) center/17px no-repeat;transition:transform .25s ease}
+.qa[open] summary::after{transform:rotate(45deg)}
+.qa__a{padding:0 4px clamp(22px,2.6vw,34px);color:var(--text);font-size:var(--fs-body);line-height:2.05;max-width:50em;margin-inline-start:calc(2.2em + clamp(12px,2vw,28px) + 8px)}
+@media (max-width:640px){.qa__a{margin-inline-start:4px}.qa summary{grid-template-columns:minmax(0,1fr) 44px}.qa summary::before{display:none}}
+
+/* ═════ الفوتر ═════ */
+.foot{margin-top:clamp(20px,4vw,56px);background:var(--foot);color:#fff;padding-block:clamp(36px,5vw,64px);font-size:14px;border-radius:var(--r-lg) var(--r-lg) 0 0}
+.foot__in{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:22px 32px}
+.foot__logo{width:84px}
+.foot__links{display:flex;flex-wrap:wrap;gap:8px 28px;font-weight:700;font-size:13.5px}
+.foot a{text-decoration:none}.foot a:hover{color:var(--yellow)}
+
+/* ═════ الدليل المجاني ═════ */
+.crumbs{display:flex;align-items:center;gap:14px;margin-bottom:clamp(16px,2.4vw,30px);font-size:14px;font-weight:700}
+.crumbs a{display:inline-flex;align-items:center;gap:8px;text-decoration:none;color:var(--muted)}
+.crumbs a:hover{color:var(--ink)}
+.crumbs .ico--fwd{transform:scaleX(-1)}
+.gh{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:var(--gap);align-items:stretch}
+.gh__txt{display:grid;gap:clamp(18px,2.4vw,28px);align-content:center;justify-items:start}
+.gh h1{font-size:var(--fs-d1);line-height:1.3;font-weight:700;color:var(--ink)}
+.gh__d{font-size:var(--fs-lead);line-height:1.95;color:var(--text);max-width:34em}
+.gstage{position:relative;isolation:isolate;display:grid;justify-items:center;align-content:center;padding:clamp(22px,3vw,40px) 0 clamp(36px,4vw,56px);overflow:clip}
+.gstage .stars{inset-inline-start:clamp(14px,2vw,26px);top:clamp(14px,2vw,26px)}
+.gchip{position:relative;display:inline-flex;align-items:center;gap:10px;padding:4px 20px 5px 18px;border-radius:999px;background:#111;color:var(--yellow);font-weight:900;font-size:var(--fs-sm);line-height:1.7;margin-bottom:clamp(18px,2.4vw,30px);z-index:2}
+.gchip::before{content:"";width:9px;height:9px;border-radius:50%;background:var(--yellow)}
+.book3d{--pw:min(200px,calc((100vw - 120px)/2.2));position:relative;width:calc(var(--pw)*2);height:calc(var(--pw)*1.414);perspective:1500px;cursor:pointer;touch-action:manipulation}
+.bk{position:absolute;inset:0;transform-style:preserve-3d;transform:rotateX(6deg) translateX(calc(var(--pw)/2));will-change:transform}
+.bk__shadow{position:absolute;left:0;right:0;bottom:-26px;height:34px;border-radius:50%;background:radial-gradient(closest-side,rgba(0,0,0,.55),transparent);filter:blur(6px);transform:translateZ(-3px)}
+.leaf,.base{position:absolute;left:0;top:0;width:var(--pw);height:100%;transform-style:preserve-3d}
+.leaf{transform-origin:100% 50%}
+.face{position:absolute;inset:0;overflow:hidden;background:#fff;backface-visibility:hidden;-webkit-backface-visibility:hidden}
+.face img{width:100%;height:100%;object-fit:cover;display:block}
+.face--b{transform:rotateY(180deg)}
+.face::after{content:"";position:absolute;inset:0;pointer-events:none}
+.face--f::after{background:linear-gradient(to left,rgba(0,0,0,.3) 0,rgba(255,255,255,.18) 1.2%,rgba(0,0,0,.14) 2.6%,transparent 9%),linear-gradient(to bottom,rgba(255,255,255,.1),transparent 30%)}
+.face--b::after,.base .face::after{background:linear-gradient(to right,rgba(0,0,0,.3) 0,rgba(0,0,0,.12) 3%,transparent 11%)}
+.leaf--1 .face--f{border-radius:10px 4px 4px 10px;box-shadow:0 20px 30px -12px rgba(0,0,0,.6)}
+.base .face{backface-visibility:visible}
+.base .face::after{background:linear-gradient(to left,rgba(0,0,0,.34) 0,rgba(0,0,0,.12) 4%,transparent 12%)}
+
+.suit-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--gap)}
+.suit{display:flex;flex-direction:column;gap:18px;min-height:clamp(200px,18vw,250px);overflow:clip}
+.suit p{font-size:clamp(15px,.2vw + 14px,17px);line-height:1.85;font-weight:700}
+.suit__n{margin-top:auto;font-size:var(--fs-num);line-height:.8;font-weight:700;direction:ltr;text-align:start;letter-spacing:-.03em}
+.nots{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(20px,4vw,64px);align-items:start;overflow:clip}
+.nots .stars{position:static;margin-bottom:18px}
+.nots ul{display:grid;gap:12px}
+.nots li{display:grid;grid-template-columns:34px 1fr;gap:16px;align-items:start;padding:16px 20px;border-radius:var(--r-md);background:rgba(255,255,255,.07);box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.14);font-size:var(--fs-body);line-height:1.9;color:#fff}
+.nots li::before{content:"";width:34px;height:34px;border-radius:50%;background:#2a2a2a var(--x-mark) center/18px no-repeat}
+.plate{overflow:clip;text-align:center;padding:clamp(40px,7vw,96px) var(--pad)}
+.plate__in{display:grid;justify-items:center;gap:clamp(20px,3vw,36px)}
+.plate h2{font-size:clamp(34px,1.5vw + 28px,48px);line-height:1.2;font-weight:700;color:#111}
+.gbar{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:16px;min-height:66px;padding:9px 30px 9px 11px;border-radius:999px;text-decoration:none;color:var(--yellow);background:#111;font-weight:900;font-size:clamp(14.5px,.5vw + 12px,16.5px);line-height:1.3;transition:transform .2s ease}
+.gbar:hover{transform:translateY(-3px)}
+.gbar__i{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;font-size:22px;color:#111;background:var(--yellow)}
+.gbar--block{display:flex;width:100%;max-width:680px}
+
+/* ═════ الدورات ═════ */
+.chead{display:grid;gap:clamp(16px,2vw,24px);justify-items:start;margin-bottom:clamp(26px,4vw,52px)}
+.courses{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--gap)}
+.course{display:flex;flex-direction:column;gap:14px;min-height:clamp(260px,24vw,340px);overflow:clip}
+.course__top{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}
+.course__top img{width:clamp(64px,6.4vw,92px);height:auto}
+.course h3{font-size:var(--fs-h3);line-height:1.5;margin-top:8px;max-width:20em}
+.course__n{margin-top:auto;font-size:var(--fs-num);line-height:.78;font-weight:700;direction:ltr;text-align:start;letter-spacing:-.03em}
+.track{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(16px,4vw,64px);align-items:end;margin-top:clamp(40px,6vw,88px)}
+.track h3{font-size:var(--fs-d2);line-height:1.4;margin:14px 0 0;color:var(--ink)}
+.track p{font-size:var(--fs-body);line-height:2;color:var(--text);max-width:42em}
+.track .road{margin-top:clamp(0px,1vw,10px)}
+.stats{overflow:clip;margin-top:clamp(40px,6vw,88px)}
+.stats__grid{position:relative;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,4vw,64px);align-items:center}
+.stats h3{font-size:var(--fs-h3);line-height:1.9;font-weight:700;color:#fff}
+.stats h3 em{font-style:normal;font-weight:900;display:inline-block;background:var(--yellow);color:#111;border-radius:.2em;padding:0 .26em .04em;line-height:1.3}
+.rings{width:100%;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(12px,2vw,24px)}
+.ring{display:grid;justify-items:center;gap:14px;text-align:center}
+.ring__lab{font-weight:700;font-size:15px;line-height:1.55;min-height:3.1em;display:flex;align-items:flex-end;color:#fff}
+.ring__fig{position:relative;width:min(100%,184px);aspect-ratio:1}
+.ring__fig svg{width:100%;height:100%;display:block;overflow:visible}
+.rg-bg{fill:none;stroke:rgba(255,255,255,.18);stroke-width:13}
+.rg-fg{fill:none;stroke:var(--yellow);stroke-width:13;stroke-linecap:round;stroke-dasharray:100;stroke-dashoffset:100;transform:rotate(-90deg);transform-origin:60px 60px}
+.ring__n{position:absolute;inset:0;display:grid;place-items:center;font-weight:700;font-size:clamp(26px,.8vw + 20px,34px);line-height:1;direction:ltr;color:#fff}
+.ring__n small{font-size:.5em;margin-left:2px;font-weight:700;vertical-align:top}
+.ring__cap{display:flex;align-items:center;gap:10px;font-size:var(--fs-sm);color:rgba(255,255,255,.72)}
+.ring__cap i{width:6px;height:22px;border-radius:3px;background:var(--yellow)}
+
+/* ═════ تكيّف الشاشات ═════ */
+@media (max-width:1019px){
+  .paths{grid-template-columns:minmax(0,1fr)}
+  .pm{min-height:0;gap:12px}.pm__n{margin-top:28px}
+  .about,.who,.gh,.nots,.track,.stats__grid,.jhead{grid-template-columns:minmax(0,1fr)}
+  .about__t{min-height:0}
+  .suit-list{grid-template-columns:minmax(0,1fr)}.suit{min-height:0}.suit__n{margin-top:22px}
+  .courses{grid-template-columns:minmax(0,1fr)}.course{min-height:0}.course__n{margin-top:28px}
+  .track{align-items:start}
+}
+@media (max-width:759px){
+  .hero__head{grid-template-columns:minmax(0,1fr);margin-bottom:calc(clamp(60px,18vw,90px) + 26px)}
+  .stats3{grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;min-width:0}
+  .stats3 li{grid-template-columns:minmax(0,1fr);gap:2px;padding:10px 0 0}
+  .hero__stage{grid-template-columns:minmax(0,1fr)}
+  .hero__cover{order:-1;width:min(62%,250px);margin-top:calc(clamp(60px,18vw,90px)*-1);margin-bottom:6px}
+  .meta>span:nth-child(2){display:none}
+  .rings{gap:10px}
+}
+@media (max-width:520px){
+  body{font-size:15px}
+}
+
+/* مشاهد */
+[data-view]{display:none}
+[data-view].is-on{display:block}
+
+/* إشعار */
+.toast{position:fixed;inset-inline:16px;bottom:22px;z-index:80;margin-inline:auto;max-width:480px;padding:14px 22px;border-radius:22px;background:#111;color:var(--yellow);font-weight:900;font-size:16px;line-height:1.6;text-align:center;opacity:0;pointer-events:none;transform:translateY(12px);transition:opacity .25s,transform .25s}
+.toast.on{opacity:1;transform:none}
+
+/* ظهور تدريجي */
+.js .rv{opacity:0;transform:translateY(20px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
+.js .rv.in{opacity:1;transform:none}
+</style>
+</head>
+<body>
+
+<header class="top" id="topbar">
+  <div class="top__in">
+    <a class="top__logo" href="#home" data-go="home" aria-label="أكاديمية شفرة، الصفحة الرئيسية"><span class="logo" role="img" aria-label="شفرة"></span><span>أكاديمية شفرة</span></a>
+    <nav class="top__nav" id="nav" aria-label="القائمة الرئيسية">
+      <a href="#home" data-go="home">الرئيسية</a>
+      <a class="is-cta" href="#guide" data-go="guide">ابدأ مجاناً</a>
+      <a href="#courses" data-go="courses">دوراتنا</a>
+      <a href="#" data-tg target="_blank" rel="noopener">قناة التليجرام</a>
+      <a href="#about" data-go="about">من هي شفرة؟</a>
+      <a href="#faq" data-go="faq">الأسئلة الشائعة</a>
+    </nav>
+    <button class="theme" id="theme" type="button" aria-label="تبديل الوضع: فاتح / داكن" title="تبديل الوضع">
+      <svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 13.2A8.6 8.6 0 1 1 10.8 3.5a7 7 0 0 0 9.7 9.7z"/></svg>
+      <svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.4M12 19.1v2.4M2.5 12h2.4M19.1 12h2.4M5.3 5.3l1.7 1.7M17 17l1.7 1.7M18.7 5.3L17 7M7 17l-1.7 1.7"/></svg>
+    </button>
+  </div>
+</header>
+
+<main>
+
+<!-- ═══════════════ الرئيسية ═══════════════ -->
+<div data-view="home" class="is-on">
+
+  <section class="hero" id="top">
+    <div class="wrap">
+      <div class="meta"><span>© أكاديمية شفرة</span><span>الدليل المجاني والدورات</span><span class="num">01 / 05</span></div>
+      <div class="hero__head">
+        <h1 class="d1"><span class="ln">ابنِ <span class="hl">منتجك الرقمي</span>..</span><span class="ln">واربح منه <span class="u">بصدق وواقعية.</span></span></h1>
+        <ul class="stats3" aria-label="لمحة سريعة">
+          <li><b class="num">7</b><span>خطوات مختصرة</span></li>
+          <li><b class="num">100%</b><span>مجاناً</span></li>
+          <li><b class="num">17</b><span>محطة في رحلتك</span></li>
+        </ul>
+      </div>
+      <div class="hero__stage m m-k">
+        <span class="stars" aria-hidden="true"><span class="ast"></span></span>
+        <div class="hero__txt">
+          <p class="hero__lead">أكاديمية “شفرة” تعلمك كيف تصنع، تبني، وتسوق منتجك بالطريقة الصح، بدون وعود كاذبة وبدون أحلام وردية. نضع بين يديك نظاماً عملياً يغطي رحلتك من قبل الفكرة حتى استقبال الأرباح.</p>
+          <div class="hero__act">
+            <a class="btn btn--y" href="#guide" data-go="guide">ابدأ مجاناً <span class="btn__i" aria-hidden="true"><span class="ico ico--fwd"></span></span></a>
+            <a class="btn btn--ghost" href="#journey" data-go="journey">شاهد الرحلة</a>
+          </div>
+        </div>
+        <div class="hero__cover">
+          <img src="assets/cover.webp" width="720" height="1017" alt="غلاف الدليل المجاني">
+          <span class="pill pill--y">مجاناً 100%</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- خريطة الرحلة -->
+  <section class="band" id="journey" style="padding-top:0">
+    <div class="wrap">
+      <div class="meta"><span>الرحلة</span><span>من الفكرة إلى الأرباح</span><span class="num">02 / 05</span></div>
+      <div class="jhead rv">
+        <div class="sechead" style="margin:0">
+          <h2 class="d2">من الفكرة إلى <span class="hl">استقبال الأرباح</span></h2>
+        </div>
+        <div class="legend" aria-hidden="true"><span><i></i>المسار الأول: صناعة المنتج</span><span><i class="w"></i>المسار الثاني: التسويق</span></div>
+      </div>
+      <div class="road" data-lg="6" role="group" aria-label="خريطة رحلتك من الفكرة إلى استقبال الأرباح"><svg class="road__svg" aria-hidden="true"><path class="road__edge" pathLength="1"/><path class="road__line" pathLength="1"/><path class="road__dash"/></svg><ol class="road__list"><li class="stn"><span class="stn__dot">01</span><span class="stn__lab">الفكرة</span></li><li class="stn"><span class="stn__dot">02</span><span class="stn__lab">الجمهور المستهدف</span></li><li class="stn"><span class="stn__dot">03</span><span class="stn__lab">الهوية التجارية</span></li><li class="stn"><span class="stn__dot">04</span><span class="stn__lab">هيكل المنتج</span></li><li class="stn"><span class="stn__dot">05</span><span class="stn__lab">بناء المنتج</span></li><li class="stn"><span class="stn__dot">06</span><span class="stn__lab">العنوان</span></li><li class="stn"><span class="stn__dot">07</span><span class="stn__lab">الغلاف</span></li><li class="stn"><span class="stn__dot">08</span><span class="stn__lab">صفحة الهبوط</span></li><li class="stn"><span class="stn__dot">09</span><span class="stn__lab">المغناطيس المجاني</span></li><li class="stn stn--b"><span class="stn__dot">10</span><span class="stn__lab">فتح حساب انستغرام</span></li><li class="stn stn--b"><span class="stn__dot">11</span><span class="stn__lab">فتح قناة التليجرام</span></li><li class="stn stn--b"><span class="stn__dot">12</span><span class="stn__lab">الإعدادات</span></li><li class="stn stn--b"><span class="stn__dot">13</span><span class="stn__lab">استراتيجية المحتوى<small>لأول <span class="num">90</span> يوم</small></span></li><li class="stn stn--b"><span class="stn__dot">14</span><span class="stn__lab">أفكار المحتوى</span></li><li class="stn stn--b"><span class="stn__dot">15</span><span class="stn__lab">صناعة المحتوى</span></li><li class="stn stn--b"><span class="stn__dot">16</span><span class="stn__lab">تحليل المحتوى</span></li><li class="stn stn--b stn--end"><span class="stn__dot">17</span><span class="stn__lab">استقبال الأرباح</span></li></ol></div>
+    </div>
+  </section>
+
+  <!-- من هي شفرة؟ -->
+  <section class="band" id="about" style="padding-top:0">
+    <div class="wrap">
+      <div class="meta"><span>التعريف</span><span>منصة عربية</span><span class="num">03 / 05</span></div>
+      <div class="about rv">
+        <div class="about__t m m-g">
+          <div class="eyebrow"><span class="num">001</span><i></i></div>
+          <h2 class="d2">من هي <span class="hl">شفرة؟</span></h2>
+          <div class="pills"><span class="pill">منصة عربية</span><span class="pill">بصدق وواقعية</span><span class="pill">بالذكاء الاصطناعي</span></div>
+        </div>
+        <div class="about__p m m-k">
+          <span class="stars stars--k" aria-hidden="true"><span class="ast"></span></span>
+          <span class="glyph" aria-hidden="true"></span>
+          <p>شفرة هي منصة عربية أُسست لتعلمك صناعة وبناء المنتجات الرقمية والربح منها بصدق وواقعية. لا نبيع لك أسراراً خفية عشوائية، ولا نعدك بدخل مضمون ومبالغ خيالية، بل نضع بين يديك نظاماً واضحاً ومجرباً يعتمد على الذكاء الاصطناعي ليقوم بالعمل الأصعب نيابة عنك.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ابدأ رحلتك مع شفرة -->
+  <section class="band" id="paths" style="padding-top:0">
+    <div class="wrap">
+      <div class="meta"><span>الخيارات</span><span>ثلاث طرق للبدء</span><span class="num">04 / 05</span></div>
+      <div class="sechead rv"><div class="eyebrow"><span class="num">002</span><i></i></div><h2 class="d2">ابدأ رحلتك <span class="hl">مع شفرة</span></h2></div>
+      <div class="paths">
+        <article class="pm m m-y rv">
+          <div class="pm__top"><span class="pill pill--k">مجاناً</span><img src="assets/i3_book_g.webp" width="76" height="76" alt=""></div>
+          <h3>ابدأ مجاناً (الدليل المجاني)</h3>
+          <p>خطوات عملية مختصرة تضعك على الطريق الصحيح لبناء أول منتج رقمي مطلوب.</p>
+          <div class="pm__act"><a class="btn btn--k btn--sm" href="#guide" data-go="guide">اضغط للتحميل الفوري <span class="btn__i" aria-hidden="true"><span class="ico ico--down"></span></span></a></div>
+          <div class="pm__n num">01<u></u></div>
+        </article>
+        <article class="pm m m-g rv">
+          <div class="pm__top"><span class="soon">قريباً</span><img src="assets/i3_trophy_y.webp" width="76" height="76" alt=""></div>
+          <h3>دوراتنا التطبيقية</h3>
+          <p>أنظمة عملية ومباشرة لبناء وتسويق المنتجات الرقمية بالذكاء الاصطناعي.</p>
+          <div class="pm__act"><a class="btn btn--k btn--sm" href="#courses" data-go="courses">تعرف على الدورات <span class="btn__i" aria-hidden="true"><span class="ico ico--fwd"></span></span></a></div>
+          <div class="pm__n num">02<u></u></div>
+        </article>
+        <article class="pm m m-k rv">
+          <div class="pm__top"><span class="pill">مجاناً</span><img src="assets/i3_play_y.webp" width="76" height="76" alt=""></div>
+          <h3>قناة التليجرام</h3>
+          <p>مساحتنا الخاصة التي نشارك فيها أعمق الأفكار والتفاصيل اليومية التي لا ننشرها في أي مكان آخر.</p>
+          <div class="pm__act"><a class="btn btn--y btn--sm" href="#" data-tg target="_blank" rel="noopener">انضم إلينا مجاناً <span class="btn__i" aria-hidden="true"><span class="ico ico--plane"></span></span></a></div>
+          <div class="pm__n num">03<u></u></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- من وراء شفرة؟ -->
+  <section class="band" id="founder" style="padding-top:0">
+    <div class="wrap">
+      <div class="sechead rv"><div class="eyebrow"><span class="num">003</span><i></i></div><h2 class="d2">من وراء <span class="hl">شفرة؟</span></h2></div>
+      <div class="who rv">
+        <div class="who__card m m-k"><p>خلف هذه الأكاديمية تقف <strong>فاطمة الزهراء</strong>: حاصلة على ماجستير في إدارة الأعمال (وكان موضوع مذكرتها عن التسويق بالمحتوى والوعي بالعلامات التجارية)، وتمتلك أكثر من سنتين من الخبرة في صناعة المنتجات الرقمية، مع خلفية عملية في عدة مشاريع (بزنسات) سابقة، وأكثر من 3 سنوات في مجال التسويق. نضع خبرتنا العملية الواقعية بين يديك لنختصر عليك سنوات من التخبط والتجارب الفاشلة.</p></div>
+        <div class="facts m m-g">
+          <span class="fact"><i aria-hidden="true"><span class="ico ico--check"></span></i>ماجستير في إدارة الأعمال</span>
+          <span class="fact"><i aria-hidden="true"><span class="ico ico--check"></span></i>مذكرة الماجستير عن التسويق بالمحتوى والوعي بالعلامات التجارية</span>
+          <span class="fact"><i aria-hidden="true"><span class="ico ico--check"></span></i>أكثر من سنتين من الخبرة في صناعة المنتجات الرقمية</span>
+          <span class="fact"><i aria-hidden="true"><span class="ico ico--check"></span></i>أكثر من <span class="num">3</span> سنوات في مجال التسويق</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- الأسئلة الشائعة -->
+  <section class="band" id="faq" style="padding-top:0">
+    <div class="wrap">
+      <div class="meta"><span>الأسئلة</span><span>إجابات سريعة</span><span class="num">05 / 05</span></div>
+      <div class="sechead rv"><div class="eyebrow"><span class="num">004</span><i></i></div><h2 class="d2">الأسئلة <span class="hl">الشائعة</span></h2></div>
+      <div class="faq">
+        <details class="qa rv"><summary>هل أقدر أبدأ مجاناً؟</summary><div class="qa__a">نعم، نقدم لك محتوى قيّماً ودليلاً مجانياً يرتب لك الخطوات الأولى لتستطيع البدء بنفسك دون الحاجة لدفع أي مبلغ.</div></details>
+        <details class="qa rv"><summary>لو اشتركت في الدورة، هل سأحقق أرباحاً مباشرة؟</summary><div class="qa__a">نحن لا نوعدك بأرباح مباشرة أو مضمونة؛ لأن النتيجة تعتمد على التزامك وتطبيقك. لكننا نسهل عليك الطريق بتوفير أوامر ذكاء اصطناعي جاهزة تنفذ العمل الثقيل نيابة عنك، ونمنحك الخطوات المجربة التي أثبتت نجاحها معنا ومع غيرنا.</div></details>
+        <details class="qa rv"><summary>هل سأتعلم في الدورة كيف أصمم صفحات الهبوط والدلائل بنفسي؟</summary><div class="qa__a">أكيد 100%. ستكون صفحة الهبوط هذه والدليل المجاني ودورتنا هي “دراسة الحالة” (Case Study) العملية داخل الدورة، وسنعطيك كل التفاصيل والأخطاء التي واجهناها لتتجنبها وتبني مثلها تماماً.</div></details>
+        <details class="qa rv"><summary>هل أحتاج لبرنامج “كانفا” أو مهارات تصميم ومونتاج؟</summary><div class="qa__a">أبداً. بعد التطور الكبير لأدوات مثل (Claude) وغيرها، لم تعد بحاجة لكانفا لتصميم ملفات الـ PDF أو الدورات. سنعلمك كيف تجعل الذكاء الاصطناعي يصمم لك الملفات باحترافية وجاذبية بكبسة زر ودون أي تدخل منك، وكذلك كيف تنتج الصوت والمونتاج بالذكاء الاصطناعي. (وإذا كنت تفضل التسجيل بصوتك، فهذا سيعطي دورتك ثقة وقوة أكبر).</div></details>
+        <details class="qa rv"><summary>كيف أستقبل أرباحي إذا لم يكن لدي “باي بال” في بلدي؟</summary><div class="qa__a">لا تقلق، هناك عدة منصات وبوابات دفع عربية وعالمية ممتازة متاحة للجميع (مثل: تكة، نظملي، زاهر، وغيرها). سنشرح لك في الدورة كيف تربط صفحة هبوطك بها لتستقبل أرباحك في بلدك بكل سهولة وأمان.</div></details>
+        <details class="qa rv"><summary>هل سأحصل على منتج رقمي مطلوب حقاً بنهاية الدورة؟</summary><div class="qa__a">هذا يعتمد على اتباعك للخطوات وتصحيح المخرجات مع الذكاء الاصطناعي، وأن تكون أنت القائد والموجّه للأداة لا أن تترك لها العمل بالكامل. إذا طبّقت ذلك، ستخرج بمنتج رقمي مطلوب واحترافي المظهر تماماً كما ترى في شفرة.</div></details>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ═══════════════ الدليل المجاني ═══════════════ -->
+<div data-view="guide">
+  <section class="band" style="padding-top:clamp(96px,11vw,132px)">
+    <div class="wrap">
+      <div class="crumbs"><a href="#home" data-go="home"><span class="ico ico--fwd" aria-hidden="true"></span> الرئيسية</a></div>
+      <div class="gh">
+        <div class="gh__txt">
+          <h1>7 خطوات مختصرة لبناء <span class="hl">منتج رقمي مطلوب</span> وجاهز للبيع.</h1>
+          <p class="gh__d">دليل عملي وواقعي يعطيك كل الخطوات التي تأخذك من العثور على فكرة منتج رقمي مطلوبة وحقيقية، وتطويرها خطوة بخطوة حتى تصبح جاهزة للبيع بالكامل؛ بدون وعود وهمية، وبدون حشو أو تكرار.</p>
+          <a class="btn" href="#" data-tg target="_blank" rel="noopener">احصل على الدليل مجاناً من هنا <span class="btn__i" aria-hidden="true"><span class="ico ico--plane"></span></span></a>
+        </div>
+        <div class="gstage m m-y">
+          <span class="stars stars--k" aria-hidden="true"><span class="ast"></span></span>
+          <div class="gchip">مجاناً <span class="num">100%</span></div>
+          <div class="book3d" id="book" role="img" aria-label="الدليل المجاني وتنفتح صفحاته">
+            <div class="bk" id="bk">
+              <span class="bk__shadow"></span>
+              <div class="base"><div class="face"><img src="assets/pg7.webp" width="520" height="735" alt=""></div></div>
+              <div class="leaf leaf--3"><div class="face face--f"><img src="assets/pg5.webp" width="520" height="735" alt=""></div><div class="face face--b"><img src="assets/pg6.webp" width="520" height="735" alt=""></div></div>
+              <div class="leaf leaf--2"><div class="face face--f"><img src="assets/pg3.webp" width="520" height="735" alt=""></div><div class="face face--b"><img src="assets/pg4.webp" width="520" height="735" alt=""></div></div>
+              <div class="leaf leaf--1"><div class="face face--f"><img src="assets/cover.webp" width="720" height="1017" alt="غلاف الدليل المجاني"></div><div class="face face--b"><img src="assets/pg2.webp" width="520" height="735" alt=""></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" style="padding-top:0">
+    <div class="wrap">
+      <div class="sechead rv"><div class="eyebrow"><span class="num">001</span><i></i></div><h2 class="d2">لمن يناسب <span class="hl">هذا الدليل؟</span></h2></div>
+      <ul class="suit-list">
+        <li class="suit m m-y rv"><p>لكل شخص لا يعرف من أين يبدأ في مجال المنتجات الرقمية، ويرغب في بدء رحلته بالطريقة الصح من الصفر.</p><div class="suit__n num">01</div></li>
+        <li class="suit m m-g rv"><p>لكل شخص قام بإنشاء منتج رقمي مسبقاً ولكنه لم يحقق أي مبيعات.</p><div class="suit__n num">02</div></li>
+        <li class="suit m m-w rv"><p>لكل شخص يريد نظاماً واحداً واضحاً ومجرباً، بعيداً عن التشتت والنظريات المعقدة.</p><div class="suit__n num">03</div></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="band" style="padding-top:0">
+    <div class="wrap">
+      <div class="nots m m-k rv">
+        <div>
+          <span class="stars" aria-hidden="true"><span class="ast"></span></span>
+          <div class="eyebrow"><span class="num">002</span><i></i></div>
+          <h2 class="d2" style="margin-top:14px">لمن لا يناسب هذا الدليل <span class="hl">أبداً؟</span></h2>
+        </div>
+        <ul>
+          <li>الأشخاص الذين يبحثون عن مبيعات فورية أو دخل خيالي ومضمون بمجهود صفري.</li>
+          <li>الأشخاص الذين يريدون منتجاً جاهزاً للبيع فوراً دون أي بحث أو تعب أو عمل عليه.</li>
+          <li>من يبحث عن بيع قوالب أو منتجات قابلة لإعادة البيع، فالدليل مخصص حصراً لمن يريد بناء كتاب أو دورة حقيقية خاصة به.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" style="padding-top:0">
+    <div class="wrap">
+      <div class="plate m m-y rv">
+        <div class="plate__in">
+          <h2>مجاناً <span class="num">100%</span></h2>
+          <a class="gbar gbar--block" href="#" data-tg target="_blank" rel="noopener"><span class="gbar__i" aria-hidden="true"><span class="ico ico--plane"></span></span>احصل على الدليل مجاناً من هنا</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ═══════════════ دوراتنا ═══════════════ -->
+<div data-view="courses">
+  <section class="band" style="padding-top:clamp(96px,11vw,132px)">
+    <div class="wrap">
+      <div class="crumbs"><a href="#home" data-go="home"><span class="ico ico--fwd" aria-hidden="true"></span> الرئيسية</a></div>
+      <div class="chead rv">
+        <h1 class="d1">دورات شفرة <span class="hl">التطبيقية</span></h1>
+        <p class="lead">أنظمة ذكية ومباشرة جهّزناها لك لتعلمك بناء وتسويق المنتجات الرقمية بالذكاء الاصطناعي خطوة بخطوة.</p>
+      </div>
+      <div class="courses">
+        <article class="course m m-k rv">
+          <div class="course__top"><span class="soon">قريباً</span><img src="assets/i3_book_y.webp" width="92" height="92" alt=""></div>
+          <h3>الدورة الأولى: صناعة وبناء منتج رقمي مطلوب</h3>
+          <div class="course__n num">01</div>
+        </article>
+        <article class="course m m-y rv">
+          <div class="course__top"><span class="soon">قريباً</span><img src="assets/i3_play_g.webp" width="92" height="92" alt=""></div>
+          <h3>الدورة الثانية: تسويق المنتجات الرقمية وصناعة المحتوى</h3>
+          <div class="course__n num">02</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" style="padding-top:0">
+    <div class="wrap">
+      <div class="sechead rv" style="margin-bottom:0">
+        <span class="pill pill--k" style="justify-self:start">مسارا شفرة</span>
+        <h2 class="d2">كيف <span class="hl">نساعدك؟</span></h2>
+        <p class="lead">نعمل معك على مسارين متكاملين لتغطية رحلتك بالكامل (كلاهما قريباً):</p>
+      </div>
+
+      <div class="track rv">
+        <div><span class="soon">قريباً</span><h3>المسار الأول: صناعة وبناء المنتج الرقمي</h3></div>
+        <p>نعلمك خطوة بخطوة كيف تجد الفكرة المطلوبة في السوق، وتحدد جمهورك بدقة، وتبني هيكل المنتج وتجهز محتواه بالكامل بالذكاء الاصطناعي. نساعدك أيضاً في اختيار العنوان، تصميم الغلاف، وتجهيز صفحة البيع وكل التفاصيل ليصبح منتجك جاهزاً للبيع بالكامل، وذلك بمساعدة أوامر ذكاء اصطناعي مدربة ومستخدمة في عدة مشاريع، وهي نفس الأوامر التي بنينا بها مشروع “شفرة”.</p>
+      </div>
+      <div class="road" data-lg="5" role="group" aria-label="خريطة المسار الأول: صناعة وبناء المنتج الرقمي"><svg class="road__svg" aria-hidden="true"><path class="road__edge" pathLength="1"/><path class="road__line" pathLength="1"/><path class="road__dash"/></svg><ol class="road__list"><li class="stn"><span class="stn__dot">01</span><span class="stn__lab">الفكرة</span></li><li class="stn"><span class="stn__dot">02</span><span class="stn__lab">الجمهور المستهدف</span></li><li class="stn"><span class="stn__dot">03</span><span class="stn__lab">الهوية التجارية</span></li><li class="stn"><span class="stn__dot">04</span><span class="stn__lab">هيكل المنتج</span></li><li class="stn"><span class="stn__dot">05</span><span class="stn__lab">بناء المنتج</span></li><li class="stn"><span class="stn__dot">06</span><span class="stn__lab">العنوان</span></li><li class="stn"><span class="stn__dot">07</span><span class="stn__lab">الغلاف</span></li><li class="stn"><span class="stn__dot">08</span><span class="stn__lab">صفحة الهبوط</span></li><li class="stn stn--end"><span class="stn__dot">09</span><span class="stn__lab">المغناطيس المجاني</span></li></ol></div>
+
+      <div class="track rv">
+        <div><span class="soon">قريباً</span><h3>المسار الثاني: تسويق المنتج الرقمي وصناعة المحتوى</h3></div>
+        <p>نعلمك كيف تسوق لمنتجك الرقمي من الصفر: بدءاً من فتح الحساب وبناء الهوية التجارية، مروراً بوضع استراتيجية محتوى تجذب المهتمين وتبني ثقتهم، ثم مصادر أفكار المحتوى وصولاً إلى صناعة محتوى احترافي (سواء ريلز أو كاروسيل أو ستوري) بالذكاء الاصطناعي بدون عذاب، تماماً مثل محتوى “شفرة” الذي تراه في صفحاتنا. كما نعلمك كيف تحلل حسابك، وتتعامل مع كل نوع من جمهورك لتحويلهم من مجرد متابعين إلى مشترين بطريقة واضحة واحترافية.</p>
+      </div>
+      <div class="road" data-lg="4" role="group" aria-label="خريطة المسار الثاني: تسويق المنتج الرقمي وصناعة المحتوى"><svg class="road__svg" aria-hidden="true"><path class="road__edge" pathLength="1"/><path class="road__line" pathLength="1"/><path class="road__dash"/></svg><ol class="road__list"><li class="stn stn--b"><span class="stn__dot">01</span><span class="stn__lab">فتح حساب انستغرام</span></li><li class="stn stn--b"><span class="stn__dot">02</span><span class="stn__lab">فتح قناة التليجرام</span></li><li class="stn stn--b"><span class="stn__dot">03</span><span class="stn__lab">الإعدادات</span></li><li class="stn stn--b"><span class="stn__dot">04</span><span class="stn__lab">استراتيجية المحتوى<small>لأول <span class="num">90</span> يوم</small></span></li><li class="stn stn--b"><span class="stn__dot">05</span><span class="stn__lab">أفكار المحتوى</span></li><li class="stn stn--b"><span class="stn__dot">06</span><span class="stn__lab">صناعة المحتوى</span></li><li class="stn stn--b"><span class="stn__dot">07</span><span class="stn__lab">تحليل المحتوى</span></li><li class="stn stn--b stn--end"><span class="stn__dot">08</span><span class="stn__lab">استقبال الأرباح</span></li></ol></div>
+
+      <div class="stats m m-k rv" id="stats">
+        <div class="stats__grid">
+          <h3><em><span class="num">65%</span></em> من بيع منتجك الرقمي تعتمد على طريقة بنائه بالشكل الصحيح، و<em><span class="num">35%</span></em> تعتمد على التسويق له بالشكل الصحيح.</h3>
+          <div class="rings">
+            <div class="ring" data-to="65">
+              <p class="ring__lab">بناء المنتج بالشكل الصحيح</p>
+              <div class="ring__fig"><svg viewBox="0 0 120 120" aria-hidden="true"><circle class="rg-bg" cx="60" cy="60" r="50" pathLength="100"/><circle class="rg-fg" cx="60" cy="60" r="50" pathLength="100"/></svg><span class="ring__n"><span><b class="cnt">0</b><small>%</small></span></span></div>
+              <div class="ring__cap"><i></i><span>المسار الأول</span></div>
+            </div>
+            <div class="ring" data-to="35">
+              <p class="ring__lab">التسويق له بالشكل الصحيح</p>
+              <div class="ring__fig"><svg viewBox="0 0 120 120" aria-hidden="true"><circle class="rg-bg" cx="60" cy="60" r="50" pathLength="100"/><circle class="rg-fg" cx="60" cy="60" r="50" pathLength="100"/></svg><span class="ring__n"><span><b class="cnt">0</b><small>%</small></span></span></div>
+              <div class="ring__cap"><i></i><span>المسار الثاني</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__in">
+    <img class="foot__logo" src="assets/logo_full_yellow.webp" width="300" height="283" alt="أكاديمية شفرة">
+    <div class="foot__links">
+      <a href="#guide" data-go="guide">الدليل المجاني</a>
+      <a href="#courses" data-go="courses">دوراتنا</a>
+      <a href="#" data-tg target="_blank" rel="noopener">قناة التليجرام</a>
+      <a href="#" data-ig target="_blank" rel="noopener">إنستقرام <span dir="ltr" style="unicode-bidi:isolate">@shefraacademy</span></a>
+    </div>
+    <span>© 2026 أكاديمية شفرة</span>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+/* ════════════════════════════════════════════════════════════
+   إعدادات الربط — عدّل هذا القسم فقط ثم انشر الصفحة
+   ════════════════════════════════════════════════════════════ */
+var SHIFRA = {
+  // رابط قناة التليجرام (يُفتح من: قناة التليجرام، انضم إلينا مجاناً، احصل على الدليل مجاناً من هنا)
+  TELEGRAM_URL: 'https://t.me/shefraacademy',
+  // رابط حساب إنستقرام
+  INSTAGRAM_URL: 'https://www.instagram.com/shefraacademy'
+};
+/* ═════════════════════ نهاية الإعدادات ═════════════════════ */
+
+(function(){
+  var d=document, root=d.documentElement;
+  root.classList.add('js');
+  function $(s,r){return (r||d).querySelector(s)}
+  function $$(s,r){return [].slice.call((r||d).querySelectorAll(s))}
+  var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* الوضع الفاتح / الداكن */
+  var themeBtn=$('#theme'), themeMeta=d.querySelector('meta[name="theme-color"]'), txT;
+  function curTheme(){return root.getAttribute('data-theme')==='dark'?'dark':'light'}
+  function paintTheme(t){root.setAttribute('data-theme',t);if(themeMeta)themeMeta.setAttribute('content',t==='dark'?'#0b0b0b':'#F5F5F3');if(themeBtn)themeBtn.setAttribute('aria-pressed',t==='dark'?'true':'false')}
+  paintTheme(curTheme());
+  if(themeBtn)themeBtn.addEventListener('click',function(){
+    var t=curTheme()==='dark'?'light':'dark';
+    root.classList.add('tx');clearTimeout(txT);txT=setTimeout(function(){root.classList.remove('tx')},500);
+    paintTheme(t);
+    try{localStorage.setItem('shifra-theme',t)}catch(e){}
+  });
+  try{var mq=matchMedia('(prefers-color-scheme: dark)');var onMq=function(e){var saved=null;try{saved=localStorage.getItem('shifra-theme')}catch(x){}if(!saved)paintTheme(e.matches?'dark':'light')};if(mq.addEventListener)mq.addEventListener('change',onMq)}catch(e){}
+
+  /* روابط خارجية */
+  var toastT;
+  function toast(msg){var t=$('#toast');t.textContent=msg;t.classList.add('on');clearTimeout(toastT);toastT=setTimeout(function(){t.classList.remove('on')},3200)}
+  $$('[data-tg]').forEach(function(a){
+    if(SHIFRA.TELEGRAM_URL){a.href=SHIFRA.TELEGRAM_URL}
+    else a.addEventListener('click',function(e){e.preventDefault();toast('سيتم إضافة رابط قناة التليجرام قريباً.')});
+  });
+  $$('[data-ig]').forEach(function(a){a.href=SHIFRA.INSTAGRAM_URL});
+
+  /* القائمة */
+  var top=$('#topbar'), nav=$('#nav');
+  function onScroll(){top.classList.toggle('top--compact',(window.pageYOffset||0)>90)}
+  window.addEventListener('scroll',onScroll,{passive:true}); onScroll();
+
+  /* ظهور تدريجي */
+  var rv=$$('.rv');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(en){en.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.08,rootMargin:'0px 0px -4% 0px'});
+    rv.forEach(function(el){io.observe(el)});
+  }else rv.forEach(function(el){el.classList.add('in')});
+
+  function watch(el,fn,th){
+    if(!('IntersectionObserver' in window)){fn();return}
+    var o=new IntersectionObserver(function(en){en.forEach(function(e){if(e.isIntersecting){fn();o.unobserve(el)}})},{threshold:th||.3});
+    o.observe(el);
+  }
+
+  /* ═════ الخريطة المرنة ═════
+     المحطات عناصر HTML تتوزع تلقائياً (متعرّجة) حسب عرض الحاوية،
+     والطريق يُرسم عبر مراكز النقاط ويُعاد حسابه عند أي تغيّر في المقاس. */
+  var roads=[];
+  function Road(el){
+    var list=$('.road__list',el), items=[].slice.call(list.children), svg=$('.road__svg',el);
+    var pe=$('.road__edge',el), pl=$('.road__line',el), pd=$('.road__dash',el);
+    var lg=+el.getAttribute('data-lg')||6, cols=0;
+    function calc(){var w=el.clientWidth;return w>=940?lg:(w>=700?Math.min(4,lg):(w>=470?3:2))}
+    function place(){
+      var c=calc(); if(c===cols)return; cols=c; el.style.setProperty('--cols',c);
+      items.forEach(function(li,i){var r=Math.floor(i/c),k=i%c,col=(r%2===0)?k:c-1-k;li.style.gridColumn=String(col+1);li.style.gridRow=String(r+1)});
+    }
+    function draw(){
+      var R=el.getBoundingClientRect(); if(!R.width||!R.height)return;
+      svg.setAttribute('viewBox','0 0 '+R.width+' '+R.height);
+      var cell=list.clientWidth/cols, bulge=cell*.5, P=[], T=[];
+      items.forEach(function(li,i){
+        var b=$('.stn__dot',li).getBoundingClientRect();
+        var p={x:b.left-R.left+b.width/2,y:b.top-R.top+b.height/2}; P.push(p); T.push(P.length-1);
+        var r=Math.floor(i/cols);
+        if(i<items.length-1&&Math.floor((i+1)/cols)!==r){
+          var nb=$('.stn__dot',items[i+1]).getBoundingClientRect(), ny=nb.top-R.top+nb.height/2;
+          P.push({x:p.x+(r%2===0?-1:1)*bulge,y:(p.y+ny)/2});
+        }
+      });
+      var dstr='M'+P[0].x.toFixed(1)+' '+P[0].y.toFixed(1);
+      for(var i=0;i<P.length-1;i++){
+        var p0=P[i-1]||P[i],p1=P[i],p2=P[i+1],p3=P[i+2]||p2;
+        dstr+=' C'+(p1.x+(p2.x-p0.x)/6).toFixed(1)+' '+(p1.y+(p2.y-p0.y)/6).toFixed(1)+' '+(p2.x-(p3.x-p1.x)/6).toFixed(1)+' '+(p2.y-(p3.y-p1.y)/6).toFixed(1)+' '+p2.x.toFixed(1)+' '+p2.y.toFixed(1);
+      }
+      pe.setAttribute('d',dstr);pl.setAttribute('d',dstr);pd.setAttribute('d',dstr);
+      /* تأخير ظهور كل محطة بحسب موضعها على الطريق */
+      var tot=0,cum=[0];for(var j=1;j<P.length;j++){tot+=Math.hypot(P[j].x-P[j-1].x,P[j].y-P[j-1].y);cum.push(tot)}
+      items.forEach(function(li,i){li.style.setProperty('--d',(reduce?0:(.15+(cum[T[i]]/(tot||1))*2.5)).toFixed(2)+'s')});
+    }
+    function update(){place();draw()}
+    update();
+    if('ResizeObserver' in window){new ResizeObserver(function(){update()}).observe(el)}else window.addEventListener('resize',update);
+    if(d.fonts&&d.fonts.ready)d.fonts.ready.then(update);
+    if(reduce)el.classList.add('in'); else watch(el,function(){el.classList.add('in')},.12);
+    return {update:update};
+  }
+  $$('.road').forEach(function(el){roads.push(Road(el))});
+
+  /* الحلقات 65% / 35% */
+  function easeOut(t){return 1-Math.pow(1-t,3)}
+  function runRings(){
+    $$('.ring').forEach(function(r){
+      var to=+r.getAttribute('data-to'), fg=$('.rg-fg',r), cnt=$('.cnt',r);
+      if(reduce){fg.style.strokeDashoffset=100-to;cnt.textContent=to;return}
+      var t0=null,dur=2200;
+      function step(ts){
+        if(t0===null)t0=ts;
+        var p=Math.min(1,(ts-t0)/dur), v=to*easeOut(p);
+        fg.style.strokeDashoffset=100-v; cnt.textContent=Math.round(v);
+        if(p<1)requestAnimationFrame(step);
+      }
+      requestAnimationFrame(step);
+    });
+  }
+  var statsDone=false;
+  var st=$('#stats'); if(st) watch(st,function(){if(!statsDone){statsDone=true;runRings()}},.35);
+
+  /* الكتاب: تنفتح صفحاته */
+  var book=$('#book'), bk=$('#bk'), leaves=[$('.leaf--1'),$('.leaf--2'),$('.leaf--3')];
+  var raf=0;
+  function setBook(ang){
+    var W=book.offsetWidth/2;
+    bk.style.transform='rotateX(6deg) translateX('+(W/2*(1-Math.min(1,ang[0]/180)))+'px)';
+    for(var i=0;i<3;i++){
+      var a=ang[i], z=a>90?(i+1)*0.8:(3-i)*0.8;
+      leaves[i].style.transform='translateZ('+z+'px) rotateY('+a+'deg)';
+    }
+  }
+  function playBook(){
+    cancelAnimationFrame(raf);
+    if(reduce){setBook([180,180,180]);return}
+    setBook([0,0,0]);
+    var starts=[500,1650,2750], dur=1250, t0=null;
+    function ease(t){return t<.5?4*t*t*t:1-Math.pow(-2*t+2,3)/2}
+    function step(ts){
+      if(t0===null)t0=ts;
+      var el=ts-t0, a=starts.map(function(s){return 180*ease(Math.max(0,Math.min(1,(el-s)/dur)))});
+      setBook(a);
+      if(el<starts[2]+dur+50)raf=requestAnimationFrame(step);
+    }
+    raf=requestAnimationFrame(step);
+  }
+  setBook([0,0,0]);
+  book.addEventListener('click',playBook);
+
+  /* التنقل بين الصفحات */
+  var views=$$('[data-view]'), anchors={about:1,paths:1,founder:1,faq:1,journey:1};
+  function show(route,quiet){
+    var view='home', anchor=null;
+    if(route==='guide')view='guide'; else if(route==='courses')view='courses'; else if(anchors[route])anchor=route;
+    views.forEach(function(v){v.classList.toggle('is-on',v.getAttribute('data-view')===view)});
+    var cur=anchor||view; if(cur==='journey')cur='home';
+    $$('.top__nav a').forEach(function(a){
+      var g=a.getAttribute('data-go'); a.classList.toggle('is-on',!a.classList.contains('is-cta')&&g===cur);
+    });
+    var on=nav.querySelector('a.is-on'); if(on&&nav.scrollWidth>nav.clientWidth+4&&!quiet){try{on.scrollIntoView({inline:'center',block:'nearest'})}catch(e){}}
+    if(!quiet){try{if(location.hash.slice(1)!==(route||'home'))history.pushState(null,'','#'+(route||'home'))}catch(e){}}
+    roads.forEach(function(r){r.update()});
+    var el=anchor&&d.getElementById(anchor);
+    if(el){try{el.scrollIntoView()}catch(e){window.scrollTo(0,0)}} else window.scrollTo(0,0);
+    if(view==='guide'){ cancelAnimationFrame(raf); setBook([0,0,0]); setTimeout(playBook,350); }
+  }
+  d.addEventListener('click',function(e){
+    var a=e.target.closest?e.target.closest('[data-go]'):null; if(!a)return;
+    e.preventDefault(); show(a.getAttribute('data-go'));
+  });
+  window.addEventListener('hashchange',function(){show(location.hash.slice(1),true)});
+  var start='';try{start=location.hash.slice(1)}catch(e){}
+  show(start,true);
+  if(!start)window.scrollTo(0,0);
+})();
+</script>
+</body>
+</html>
